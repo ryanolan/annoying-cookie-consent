@@ -41,6 +41,6 @@ consentForm.addEventListener("submit", function (event) {
   }, 3000);
 });
 
-declineBtn.addEventListener("mouseenter", function(){
-    modalChoiceBtns.classList.toggle("modal-choice-btns-reverse");
-})
+declineBtn.addEventListener("mouseenter", function () {
+  modalChoiceBtns.classList.toggle("modal-choice-btns-reverse");
+});
