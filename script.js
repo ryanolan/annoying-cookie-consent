@@ -13,6 +13,11 @@ modalCloseBtn.addEventListener("click", function () {
 
 consentForm.addEventListener("submit", function (event) {
   event.preventDefault();
+
+  const consentFormData = new FormData(consentForm);
+  const fullName = consentFormData.get("modalName");
+
+
   modalText.innerHTML = `<div class="modal-inner-loading">
     <img src="images/loading.svg" class="loading">
     <p id="uploadText">
@@ -26,7 +31,7 @@ consentForm.addEventListener("submit", function (event) {
   setTimeout(function () {
     document.getElementById(
       "modal-inner"
-    ).innerHTML = `<h2>Thanks you sucker! </h2>
+    ).innerHTML = `<h2>Thanks <span class="modal-display-name">${fullName}</span>, you sucker! </h2>
         <p>We just sold the rights to your eternal soul.</p>
         <div class="idiot-gif">
             <img src="images/pirate.gif">
