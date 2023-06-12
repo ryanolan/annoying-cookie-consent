@@ -131,7 +131,7 @@ main {
   justify-content: center;
 }
 
-.reverse {
+.modal-choice-btns-reverse {
   flex-direction: row-reverse;
 }
 

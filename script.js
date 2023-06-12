@@ -42,5 +42,5 @@ consentForm.addEventListener("submit", function (event) {
 });
 
 declineBtn.addEventListener("mouseenter", function(){
-    modalChoiceBtns.classList.toggle("reverse");
+    modalChoiceBtns.classList.toggle("modal-choice-btns-reverse");
 })
