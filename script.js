@@ -17,7 +17,6 @@ consentForm.addEventListener("submit", function (event) {
   const consentFormData = new FormData(consentForm);
   const fullName = consentFormData.get("modalName");
 
-
   modalText.innerHTML = `<div class="modal-inner-loading">
     <img src="images/loading.svg" class="loading">
     <p id="uploadText">
@@ -36,5 +35,6 @@ consentForm.addEventListener("submit", function (event) {
         <div class="idiot-gif">
             <img src="images/pirate.gif">
         </div>`;
+    modalCloseBtn.disabled = false;
   }, 3000);
 });
